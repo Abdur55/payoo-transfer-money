@@ -17,12 +17,12 @@ document.getElementById('send-btn').addEventListener('click', function(event){
     document.getElementById('balance').innerText = newBalance;
 // transection history
    const div =  document.createElement('div')
-   div.classList.add('bg-blue-500 ')
+   div.classList.add('bg-blue-500')
 
    div.innerHTML = `
    
-   <h4 class="text-black">TransferMoney</h4>
-   <p class="text-black"> Transfered ${transferamount} tk, Balance ${newBalance}
+   <h4 class="text-white">TransferMoney</h4>
+   <p class="text-white"> Transfered ${transferamount} tk, Balance ${newBalance} </p>
    `
    document.getElementById('transection-history').appendChild(div)
      
