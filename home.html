@@ -20,13 +20,20 @@
 
                             <div class="stat">
                                 <div class="stat-title">Total Balance</div>
-                                <div class="stat-value">9400</div>
+                                <div id="balance" class="stat-value">9400</div>
                                 
                             </div>
                         </div>
                         <div class="divider"></div>
+                        <!-- button for using start -->
+                        <div class="gap-3">
+                             <button id="transfer-money-btn" class="btn btn-lg">Transfer Money</button>
+                         <button id="transection-btn" class="btn btn-lg">Transaction</button>
+                        </div>
+                        <div class="divider"></div>
+                        <!-- button for using end -->
                         <!-- start transfer money  -->
-                        <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div id="transfer-money" class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                             <form class="card-body">
                                 <div class="form-control">
                                     <label class="label">
@@ -54,6 +61,14 @@
                             </form>
                         </div>
                         <!-- end transfer money  -->
+                         <!-- transection start -->
+                          <div id="transection-div" class="hidden">
+                               <h1>This is transection Amount history</h1>
+                          </div>
+                          <div id="transection-history">
+                             
+                          </div>
+                         <!-- transection end -->
                     </div>
                 </div>
             </div>
@@ -61,6 +76,7 @@
     </main>
     <script src="js/utilities.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/feature.js"></script>
 </body>
 
 </html>
